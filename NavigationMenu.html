@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+
+    <style>
+        .navbar {
+            background-color: rgb(0, 0, 0);
+            border-radius: 50px;
+            border: 5px solid rgb(231 54 219);
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            padding: 3px;
+            color: white;
+            margin: 5px 70px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .search {
+            color: white;
+            /* margin: 5px 56px; */
+        }
+
+        .navbar input {
+            color: black;
+            margin: 5px 72px;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 130px;
+        }
+
+        .navbar a:hover {
+            color: red;
+
+        }
+
+        /* header{
+            margin: 1px;
+            border:2px solid black;
+            background-color: rgb(255, 4, 192);
+        } */
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                    <li><a href="https://google.com" target="_blank">Home</a></li>
+                    <li><a href="https://blog.google.com" target="_blank">Blogs</a></li>
+                    <li><a href="https://about.google.com" target="_blank">Services</a></li>
+                    <li><a href="https://contacts.google.com/" target="_blank">Contact Us</a></li>
+                    <div class="search" id="sarchbar">
+                        <input type="text" name=search id="search" class="searchbox" placeholder="Search Here">
+                    </div>
+            </ul>
+        </nav>
+
+    </header>
+</body>
+
+</html>
