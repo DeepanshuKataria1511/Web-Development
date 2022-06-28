@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input tags</title>
+</head>
+
+<body>
+    <h2>HTML Forms Input Tags</h2>
+
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Roll No. :<input type="text" name="myRollno">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Age : <input type="number" name="myAge">
+            <div>
+                <label for="Eligibility" >Are you Eligible : </label>
+                <br>
+                <input type="checkbox" name="myEligibility" id="Eligibility" checked>
+            </div>
+            <br>
+            <div>
+                Gender: Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender">
+                Others<input type="radio" name="myGender">
+            </div>
+            <br>
+            <div>
+                Email :<input type="email" name="myEmail">
+            </div>
+            <br>
+        </div>
+        <div>
+            Write about Yourself : <br><textarea name="myMyself" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car :</label>
+            <select name="myCar" id="car">
+            <option value="KiaSel">Seltos</option>
+            <option value="KiaSon" selected >Sonnet</option>
+        </select>
+
+        <!-- if we want one to be Selected by default we use Selected -->
+
+        </div>
+
+
+        <br>
+
+        <div>
+            <input type="submit" value="Submit Now">
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset Now">
+        </div>
+
+
+
+
+        <!-- Name and ROll No. will come in the same row we can format them in 2 diff ways one by using br and another by using the <div></div> tag  -->
+
+
+    </form>
+
+</body>
+
+</html>
