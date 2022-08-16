@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+
+            /* This is Element Selector selecting the whole element aka Paragraph   */
+
+        p{
+            color : red ; 
+        }
+
+        /* This makes all the Paragraph Font as Red Color */
+
+        /* Only coloring a particular paragrapg blue. */
+        #Blue{
+            color : blue ; 
+        }
+
+
+        /* Colouring using Class */
+        .Blue{
+            color : blue ;
+        }
+
+        /* Now suppose we have to color footer and the span with color as white and background as black */
+        /* This is a Grouping Selector */
+        footer , span {
+            color: white;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Selectors in CSS</h3>
+    <p>This is a Simple Paragraph to demostrate CSS</p>
+    <p>This is another paragraph</p>
+    <div>
+        <p>This is yet another paragraph</p>
+        <!-- Although this paragraph is inside Division tag still it gets red because we applied CSS on the paragraph regardless of where or inside what it is present. -->
+
+        <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+        <!-- if we want to color only one paragraph then we give the para an ID and then color the para with thst ID -->
+
+        <p id="Blue">Only this Para will be colored Blue</p>
+
+
+        This para is coloured using Class
+        <p class="Blue"> This is Unique Paragraph</p>
+
+
+        <span>This is a Span</span>
+        <footer>This is a Footer</footer>
+
+        Since span is a Inline Element so it takes less space and Fotter is a block element so it takes complete space
+
+    </div>
+</body>
+</html>
