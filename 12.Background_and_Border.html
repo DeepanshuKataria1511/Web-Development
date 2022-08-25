@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and background</title>
+
+    <style>
+        #FirstPara{
+            background-color: rgb(44, 209, 250);
+            height: 150px;
+            width: 500px;
+            /* border: 5px;
+            border-color: blueviolet;
+            border-style:solid; */
+
+            border : 5px solid green ;
+
+            border-radius: 5px;
+        }
+
+
+        #SecondPara{
+            height: 150px;
+            width: 500px;
+            background-color: bisque;
+            border-top: 5px dotted yellow;
+            border-bottom: 10px solid purple;
+            border-left: 20px double red;
+            border-right : 2px solid gray;  
+
+
+            border-bottom-left-radius : 5px;
+            border-bottom-right-radius : 12px;
+
+            border-top-right-radius : 5px;
+            border-top-left-radius : 12px;
+        }
+
+
+        #ThirdPara{
+                height: 400px;
+                width: 400px;
+                background-color: rgb(125, 115, 134);
+                border: 3px solid purple;
+                background-repeat :repeat-x;
+                /* background-repeat :repeat-y; */
+                background-repeat : no-repeat ;
+                background-image:url(https://www.codewithharry.com/img/logo-blue.png);
+                /* background-repeat :repeat-y; */
+
+                /* background-position: center ; */
+                /* background-position: center top ; */
+                /* background-position: 25px top ; */
+                /* background-position: 25px 135px ; */
+                background-position: bottom right  ;
+            
+
+                /* centre top bottom , left right  */
+
+
+        }
+
+
+
+
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <h3>Borders and background</h3>
+    <p id="FirstPara">This is First Paragraph</p>
+    <p id="SecondPara">This is Second Paragraph</p>
+    <p id="ThirdPara">This is Third Paragraph</p>
+
+
+
+</body>
+</html>
